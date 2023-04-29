@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  <h1 align="center">Weather</h1>
+  <body style="background: linear-gradient(white);">
+    <div align="center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgmSIJeg5PKK_tLSVfMmKT5D0a36jWKFOMyA&usqp=CAU">
+    </div>
+    <br>
+
+    <form method="POST" align="center">
+      {% for message in get_flashed_messages()%}
+          <p> {{message}} </p>
+      {% endfor %}
+      <br>
+      <p>
+        <label for="temperature">Temperature (Fahrenheit):</label><br>
+        <input type="number" step="any" name="temperature">
+      </p>
+      <br>
+      <p>
+        <label for="humidity">Humidity (percentage):</label><br>
+        <input type="number" step="any" name="humidity">
+      </p>
+      <p>
+        <label for="precip">Precipitation (inches):</label><br>
+        <input type="number" step="any" name="precip">
+      </p>
+      <p>
+        <label for="ws">Wind Speed: (mph)</label><br>
+        <input type="number" step="any" name="ws">
+      </p>
+      <p>
+        <label for="Pressure">Pressure (millibars):</label><br>
+        <input type="number" step="any" name="pressure">
+      </p>
+      <input type="submit" value="Enter" id="weather">
+    </form>
+  </body>
+  
+  {% endblock %}

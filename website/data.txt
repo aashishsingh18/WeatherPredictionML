@@ -1,0 +1,27 @@
+for clear day
+      tem = 76.1
+      humid = 55
+      precp = 0
+      wind = 10.7
+      pressure = 1016.2
+
+for partly cloudly
+      tem = 67.3
+      humid = 71.6
+      precp = 0
+      wind = 9.8
+      pressure = 1012.3
+
+for rain
+      tem = 59.3
+      humid = 68.9
+      precp = 0.03
+      wind = 7.4
+      pressure = 1018.1
+
+for snow
+      tem = 32
+      humid = 80
+      precp = 0.5
+      wind = 15
+      pressure = 1010
